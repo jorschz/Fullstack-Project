@@ -27,6 +27,21 @@ export default function NavbarSystem() {
             >
                 <span className="navbar-toggler-icon"></span>
             </button>
+            <div className="collpase navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <Link to="/dashboard" className="nav-link">
+                            Dashboard
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/">
+                        </Link>
+
+                    </li>
+                </ul>
+
+            </div>
         </nav>
     )
 }
