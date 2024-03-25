@@ -1,5 +1,3 @@
-*Front-end isnt complete*
-
 # Fullstack-Project: Petshop
 This project consists of a product inventory management application. The front-end developed in React and back-end developed in Spring.
 
@@ -148,8 +146,8 @@ GET /statistics/${animal}/${category}
 | animal    | string | **Required**: Animal Type (Dog or Cat)              |
 | category  | string | **Required** Animal Category (Puppy/Kitten or Adult |
 
-## -
-This project was collaboratively developed as part of an evaluation assignment for the Senai course.
+##
+*Front-end isnt complete*
 
 
 
