@@ -4,7 +4,7 @@ export function useAuthentication() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    // Verifica se o usuário está logado no localStorage ao carregar a página
+    // Check if the user is logged in to the localStorage when loading the page.
     const userData = localStorage.getItem("userData");
     if (userData) {
       setIsLoggedIn(true);
@@ -12,13 +12,13 @@ export function useAuthentication() {
   }, []);
 
   const login = () => {
-    // Lógica de autenticação bem-sucedida
+    // Successful authentication logic
     setIsLoggedIn(true);
 
   };
 
   const logout = () => {
-    // Lógica de logout
+    // Logout logic
     setIsLoggedIn(false);
     localStorage.clear();
   };
