@@ -90,6 +90,48 @@ GET /inventory
 
 #### List inventory by ID
 ```
+GET /inventory/${id}
+```
+
+#### Edit inventory
+```
+PUT /inventory/${id}
+```
+| Parameter | Type   | Description                                                         |
+|:----------|:-------|:--------------------------------------------------------------------|
+| product   | string | **Required**: Product Type (Food, Flea control or Parasite Control) |
+| quantity  | long   | **Required**: Quantity                                              |
+
+#### Delete inventory
+```
+DELETE /inventory/${id}
+```
+
+--------------------------------------------------------------------------------------------------
+
+### Dashboard
+
+#### Load records for the dashboard
+```
+GET /statistics/${animal}/${category}
+```
+| Parameter | Type   | Description                                         |
+| animal    | string | **Required**: Animal Type (Dog or Cat)              |
+| category  | string | **Required** Animal Category (Puppy/Kitten or Adult |
+
+
+## Application Usage
+Users are exppected to clone the project into their local environment and set up the [PostgreSQL](https://www.postgresql.org/) database with the database name specified in the proejct. Additionally, database credentials need to be provided in the file:
+```
+application.properties
+```
+Once the environment is set up, the aplication can be started in an IDE, such as [IntelliJ](https://www.jetbrains.com/pt-br/idea/)
+
+--------------------------------------------------------------------------------------------------
+
+This project was collaboratively developed as part of an evaluation assignment for the Senai course.
+
+
 
 
 
