@@ -1,3 +1,5 @@
+*Front-end isnt complete*
+
 # Fullstack-Project: Petshop
 This project consists of a product inventory management application. The front-end developed in React and back-end developed in Spring.
 
